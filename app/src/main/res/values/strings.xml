@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Unscroll Application</string>
+
+
+    <string name="accessibility_description">
+    This service tracks how often you scroll in selected apps to show your total scroll count. It does not read or store the content you view.
+</string>
+
+    <string name="default_web_client_id">unscroll-607fd.firebaseapp.com</string>
+
+</resources>

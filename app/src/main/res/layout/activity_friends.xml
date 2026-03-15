@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:fillViewport="true"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/friendsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFriendsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:textSize="22sp"
+            android:textColor="@color/ink"
+            android:fontFamily="serif" />
+
+        <LinearLayout
+            android:id="@+id/searchCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add a friend by username"
+                android:textSize="14sp"
+                android:textColor="@color/slate"
+                android:fontFamily="sans-serif" />
+
+            <EditText
+                android:id="@+id/etSearchUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:padding="12dp"
+                android:textColor="@color/ink"
+                android:textColorHint="@color/slate"
+                android:background="@drawable/bg_list_item"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnSendRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send friend request"
+                android:backgroundTint="@color/teal"
+                android:textColor="@color/cream"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbFriendsLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tvRequestsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Requests"
+            android:textSize="16sp"
+            android:textColor="@color/ink"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvRequestsEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No incoming requests."
+            android:textColor="@color/slate"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="6dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_card"
+            android:padding="8dp"
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            android:id="@+id/tvFriendsEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No friends yet."
+            android:textColor="@color/slate"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnFindFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find friends"
+            android:backgroundTint="@color/teal"
+            android:textColor="@color/cream"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"
+            android:padding="8dp"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+
+</ScrollView>

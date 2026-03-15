@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#121418</color>
+    <color name="slate">#2B3138</color>
+    <color name="cream">#F7F2EA</color>
+    <color name="sand">#E7D9C7</color>
+    <color name="coral">#E86A5C</color>
+    <color name="teal">#2C6E73</color>
+    <color name="amber">#F2B35E</color>
+    <color name="surface">#FDF8F2</color>
+    <color name="card">#FFFFFF</color>
+    <color name="outline">#D7C7B6</color>
+</resources>
